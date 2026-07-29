@@ -1,0 +1,16 @@
+# Web Push — variáveis de ambiente (Vercel)
+
+Não commitar chaves privadas. Configure no painel da Vercel:
+
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+VAPID_PUBLIC_KEY=
+VAPID_PRIVATE_KEY=
+VAPID_SUBJECT=mailto:seu-email@dominio.com
+CRON_SECRET=gere-um-segredo-longo
+
+No frontend (.env local / Vercel):
+VITE_VAPID_PUBLIC_KEY=<mesmo valor de VAPID_PUBLIC_KEY>
+
+SQL: execute supabase/14_push_notifications.sql no Supabase.
